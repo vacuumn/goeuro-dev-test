@@ -1,11 +1,11 @@
 My implementation for Bus Route Challenge from https://github.com/goeuro/dev-test/tree/new-test
 
-To build run:
+To build service:
 ```
 build.sh
 ```
 
-To run:
+To run service:
 
 ```
 service.sh start path-to-FILE
