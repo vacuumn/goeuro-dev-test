@@ -1,5 +1,18 @@
 My implementation for Bus Route Challenge from https://github.com/goeuro/dev-test/tree/new-test
 
+To build run:
+```
+build.sh
+```
+
+To run:
+
+```
+service.sh start path-to-FILE
+```
+
+API Docs available after service is up and running on http://localhost:8088
+
 # Bus Route Challenge
 
 ### Problem
