@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-        <snippetsDirectory>${project.build.directory}/generated-snippets</snippetsDirectory>
+        <snippetsDirectory>${project.basedir}/build/generated-snippets</snippetsDirectory>
 	</properties>
 
 	<dependencies>
@@ -123,7 +123,7 @@
                         </goals>
                         <configuration>
                             <outputDirectory>
-                                ${project.build.outputDirectory}/static/docs
+								${project.basedir}/src/main/resources/static
                             </outputDirectory>
                             <resources>
                                 <resource>

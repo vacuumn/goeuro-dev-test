@@ -1,0 +1,43 @@
+= Bus Routes Service
+Serhii Pichkurov;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+
+
+Bus routes is a micro service with REST-API supporting a single URL and only GET requests.
+
+=== Check direct route
+`GET` endpoint for checking if two stations are connected.
+
+Examples:
+
+Using cURL:
+
+include::{snippets}/direct/curl-request.adoc[]
+
+HTTP request:
+
+include::{snippets}/direct/http-request.adoc[]
+
+HTTP response:
+
+include::{snippets}/direct/http-response.adoc[]
+
+== HTTP status codes
+Bus routes service tries to adhere as closely as possible to standard HTTP and REST conventions in its
+use of HTTP status codes.
+
+|===
+| Status code | Usage
+
+| `200 OK`
+| Standard response for successful HTTP requests.
+
+
+| `400 Bad Request`
+| The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).
+
+| `404 Not Found`
+| The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible.
+|===
